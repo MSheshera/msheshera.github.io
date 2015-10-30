@@ -107,9 +107,12 @@ body {
 
 /* Links. */
 
-a { /* Generic link styling, greyish and underlined. */
+a { /* Original generic link styling, greyish and underlined.*/
+	/*Modified to be pinkish*/
     color: #FF0099;
     text-decoration: none;
+/*    color: #2E2E2E;
+    text-decoration: underline;*/
     -o-transition:color .2s ease-in-out;
     -webkit-transition:color .2s ease-in-out;
     -moz-transition:color .2s ease-in-out;
