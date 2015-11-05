@@ -49,6 +49,7 @@ body {
     font-weight: 300;
     font-size: 2.5em;
     font-variant: normal;
+    color:#FF0099;
 	padding-left: 10px; /* Hack to dodge :hover issue. */
 	padding-right: 10px;
     position: relative; /* Hack to dodge :hover issue. */
@@ -107,12 +108,13 @@ body {
 
 /* Links. */
 
-a { /* Original generic link styling, greyish and underlined.*/
-	/*Modified to be pinkish*/
-    color: #FF0099;
-    text-decoration: none;
-/*    color: #2E2E2E;
-    text-decoration: underline;*/
+a { 
+    /* Original generic link styling, greyish and underlined.*/
+    color: #2E2E2E;
+    text-decoration: underline;
+    /*Modified to be pinkish*/
+/*    color: #FF0099;
+    text-decoration: none;*/
     -o-transition:color .2s ease-in-out;
     -webkit-transition:color .2s ease-in-out;
     -moz-transition:color .2s ease-in-out;
@@ -122,7 +124,7 @@ a { /* Original generic link styling, greyish and underlined.*/
 .nodec {
     /* Links that aren't just in content areas shouldn't be underlined */
     text-decoration: none;
-    color: #2E2E2E;
+   /* color: #2E2E2E;*/
 }
 
 a:hover { /* Hover style*/
@@ -130,7 +132,7 @@ a:hover { /* Hover style*/
     -webkit-transition:color .2s ease-in-out;
     -moz-transition:color .2s ease-in-out;
     transition:color .2s ease-in-out;
-    color: #3300FF;
+    color: #3300FF; /*Hover color blue*/
 }
 
 /* Generic to all content. */
