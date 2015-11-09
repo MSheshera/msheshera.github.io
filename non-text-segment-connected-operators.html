@@ -87,16 +87,16 @@ makes use of a tool from mathematical morphology known as connected operators.</
 </div>
 <div class="section" id="connected-operators">
 <h2><a class="toc-backref" href="#id2">Connected Operators</a></h2>
-<p>Connected operators may be considered to be filtering tools which act by merging flat zones, where a flat zone is a image region of a constant graylevel. Connected operators are such that in the course of their operation they only merge the contours of existing image regions while not creating any new contours or changing the positions of the existing image contours.</p>
+<p>Connected operators may be considered to be filtering tools which act by merging flat zones, where a flat zone is a connected component where the image is of constant graylevel. Connected operators are such that in the course of their operation they only merge the contours of existing image regions while not creating any new contours or changing the positions of the existing image contours.</p>
 <p>One method of realizing these operators is by representing the image as a tree constructed by repeatedly thresholding the image at different graylevels, performing a connected component analysis on the result of the thresholding and forming links between nodes of the tree to reflect an inclusion relationship. Based on certain variations in the way in which the tree is constructed different types of trees may be constructed. The tree representation of the image represents a structured representation of the image aiding in subsequent analysis tasks.</p>
 <p>The processing of the image is now done by means of a pruning the leaves of  tree and reconstructing the image from the pruned tree. Depending on the criteria used for pruning the trees and the nature of the tree, different kinds of filters may be realized.</p>
 <p>An introduction to connected operators may be found in the Connected Operators article by Salembier and Wilkinson. (<a class="reference external" href="https://imatge.upc.edu/web/sites/default/files/pub/aSalembier09.pdf">pdf</a>)</p>
 </div>
 <div class="section" id="proposed-approach">
 <h2><a class="toc-backref" href="#id3">Proposed Approach</a></h2>
-<p>The approach I am working on at present makes use of a <a class="reference external" href="https://imatge.upc.edu/web/sites/default/files/bkp/pub/SNRFAI97_Garrido_Salembier_Oliveras.pdf">maxtree</a> representation of the image and conbines the connected operator approach with more conventional techniques so as to effectively segment the non-text objects of a degraded grayscale document image as well as non-degraded document images. I will elaborate on this approach soon. Results from the approach look promising.</p>
+<p>The approach I am working on at present makes use of a <a class="reference external" href="https://imatge.upc.edu/web/sites/default/files/bkp/pub/SNRFAI97_Garrido_Salembier_Oliveras.pdf">maxtree</a> representation of the image and combines the connected operator approach with more conventional techniques so as to effectively segment the non-text objects of a degraded grayscale document image as well as non-degraded document images. I will elaborate on this approach soon. Results from the approach look promising.</p>
 <p>You can examine some of the segmented images here: <a class="reference external" href="https://www.dropbox.com/sh/26lw325zde9t91q/AAAiBiq6D1VQrcX0IAaZFf78a?dl=0">Segmentation Results Album</a>
-(close the apperaing login box)</p>
+(close the appearing login box)</p>
 </div>
 
   </div><!-- .content -->
