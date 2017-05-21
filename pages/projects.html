@@ -16,8 +16,8 @@
     <header class="siteheader">
       <!-- site image -->
         <div class= "siteimage">
-          <a class="nodec" href=https://dl.dropboxusercontent.com/u/42983082/Website/Images/me.jpg>
-            <img width="200" height="200" src=https://dl.dropboxusercontent.com/u/42983082/Website/Images/me.jpg>
+          <a class="nodec" href=/images/me_new_s.jpg>
+            <img width="200" height="200" src=/images/me_new_s.jpg>
           </a>
         </div>
 
@@ -28,12 +28,12 @@
         <nav class="menu">
           <ul>
             <!-- menu items-->
+              <li><a class="nodec" href="/index.html">About</a></li>
+              <li><a class="nodec" href="/pages/academics.html">Academics</a></li>
+              <li><a class="nodec" href="/pages/projects.html">Projects</a></li>
+              <li><a class="nodec" href="/pages/publications.html">Publications</a></li>
+              <li><a class="nodec" href="/pages/writing.html">Writing</a></li>
             <!--pages-->
-                <li><a class="nodec" href="../">About</a></li>
-                <li><a class="nodec" href="../pages/academics.html">Academics</a></li>
-                <li class="active"><a class="nodec" href="../pages/projects.html">Projects</a></li>
-                <li><a class="nodec" href="../pages/publications.html">Publications</a></li>
-                <li><a class="nodec" href="../pages/writing.html">Writing</a></li>
             <!-- services icons -->
           </ul>
         </nav>
@@ -45,17 +45,24 @@
   <div class="article">
     <h1>Projects</h1>
     <p>Ordered in reverse chronological order in each section.</p>
+<div class="section" id="research">
+<h2>Research</h2>
+<ol class="arabic simple">
+<li>Research Manuscript PDF Parsing and Labeling: Trained a feed forward neural network for labelling tokens from a research manuscript as belonging to one of many metadata classes. This project is part of a larger effort at IESL to extract structured metadata from research papers. This work was part of a data science independent study and was performed under the supervision of Dr. Shankar Vembu at the Chan Zuckerberg Initiative and Andrew McCallum. (<a class="reference external" href="https://github.com/MSheshera/meta_headers_ffn">Code</a>)</li>
+<li>Non-text Object Segmentation from Grayscale Document Images: Using connected operators to segment the non-text objects from grayscale document images. (<a class="reference external" href="../non-text-segment-connected-operators.html">Project page</a>)</li>
+</ol>
+</div>
 <div class="section" id="curricular">
 <h2>Curricular</h2>
-<p>Projects during my graduate level coursework at UMass Amherst.</p>
+<p>Projects during my graduate level coursework at UMass Amherst:</p>
 <ol class="arabic simple">
-<li>Suggesting Appropriate Wikipedia Infoboxes: This project involved the suggestion of appropriate infobox templates to Wikipedia articles. Given a Wikipedia article, we tried to answer the questions: Does this page require an infobox? If yes, what is the appropriate infobox to use for this page? We cast these questions as classification tasks and made use of linear SVMs and Random Forest classifiers in our solutions. This work formed part of my NLP class project. <a class="reference external" href="https://dl.dropboxusercontent.com/u/42983082/Website/Documents/Project_docs/COMPSCI585-Poster.pdf">(Poster)</a> <a class="reference external" href="https://dl.dropboxusercontent.com/u/42983082/Website/Documents/Project_docs/COMPSCI585-Report.pdf">(Report)</a></li>
+<li>Transfer Learning for human activity recognition from sensor data: Explored the application of conventional supervised approaches to human activity recognition, applied a Isomap based domain adaptation method for transfer learning between individuals, modified the approach and showed the modification to perform better than the original domain adaptation method. Work formed part of my Machine Learning class. (<a class="reference external" href="https://github.com/MSheshera/HAR-DomAdapt-CS589">Code</a>) (<a class="reference external" href="https://www.dropbox.com/s/lnhgwzogguiz5gz/COMPSCI589-Report.pdf?dl=0">Report</a>)</li>
+<li>Suggesting Appropriate Wikipedia Infoboxes: This project involved the suggestion of appropriate infobox templates to Wikipedia articles. Given a Wikipedia article, we tried to answer the questions: Does this page require an infobox? If yes, what is the appropriate infobox to use for this page? We cast these questions as classification tasks and made use of linear SVMs and Random Forest classifiers in our solutions. This work formed part of my NLP class project. (<a class="reference external" href="https://www.dropbox.com/s/utnp9qew76g8vwg/COMPSCI585-Poster.pdf?dl=0">Poster</a>) (<a class="reference external" href="https://www.dropbox.com/s/t4n8n00uu2uegcy/COMPSCI585-Report.pdf?dl=0">Report</a>)</li>
 </ol>
-<p>Projects which formed a part of my undergraduate graduation requirements or were part of work done as part of internships.</p>
+<p>Projects which formed a part of my undergraduate requirements:</p>
 <ol class="arabic simple">
-<li>Non-text Object Segmentation from Grayscale Document Images: Using connected operators to segment the non-text objects from grayscale document images. <a class="reference external" href="../non-text-segment-connected-operators.html">(Project page)</a></li>
-<li>Color Document Image Binarization: Converted a given color document image to a binary image while retaining all desired image elements. <a class="reference external" href="../color-document-image-binarization.html">(Project page)</a></li>
-<li>Dual Channel Electroencephalography Headset: Implemented a dual channel electroencephalography headset. <a class="reference external" href="../dualchannel-eeg.html">(Project page)</a></li>
+<li>Color Document Image Binarization: Converted a given color document image to a binary image while retaining all desired image elements. (<a class="reference external" href="../color-document-image-binarization.html">Project page</a>)</li>
+<li>Dual Channel Electroencephalography Headset: Implemented a dual channel electroencephalography headset. (<a class="reference external" href="../dualchannel-eeg.html">Project page</a>)</li>
 <li>AM Transmitter: This work involved the design of a modulation circuit and the design and manufacturing of the circuit board to implement the designed circuit. Project was a part of the Second Year mini project.</li>
 </ol>
 </div>
@@ -63,8 +70,8 @@
 <h2>Extra Curricular</h2>
 <p>These projects were those which weren't part of a formal curriculum.</p>
 <ol class="arabic simple">
-<li>Extracting University of Pune Marks Data: Command line tool written in Python that aids in extracting marks from the yearly college-wise engineering results distributed by the University of Pune, as pdf files, and writing them to a csv file. <a class="reference external" href="../pu-marks-extraction.html">(Project page)</a></li>
-<li>Line follower robot:  Implemented a line follower robot. The robot was also fitted with a DTMF decoder so it could also be controlled by a mobile phone. The work involved programming a Atmega8 MCU in C. The work was done as part of a robotics workshop. The built robot also participated in a competition and <a class="reference external" href="https://dl.dropboxusercontent.com/u/42983082/Website/Documents/Certs/Robosapiens.pdf">placed second</a> among about 20 other teams.</li>
+<li>Extracting University of Pune Marks Data: Command line tool written in Python that aids in extracting marks from the yearly college-wise engineering results distributed by the University of Pune, as pdf files, and writing them to a csv file. (<a class="reference external" href="../pu-marks-extraction.html">Project page</a>)</li>
+<li>Line follower robot:  Implemented a line follower robot. The robot was also fitted with a DTMF decoder so it could also be controlled by a mobile phone. The work involved programming a Atmega8 MCU in C. The work was done as part of a robotics workshop. The built robot also participated in a competition and <a class="reference external" href="https://www.dropbox.com/s/vqbc8j2rmn7h7tk/Robosapiens.pdf?dl=0">placed second</a> among about 20 other teams.</li>
 </ol>
 </div>
 
